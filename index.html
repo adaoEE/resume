@@ -8,11 +8,56 @@
 <meta charset="UTF-8"> 
 
 <link type="text/css" rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <!-- <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'> -->
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script> -->
 
+
+<style>
+	ul, #myUL {
+	  list-style-type: none;
+	}
+	
+	#myUL {
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	.caret {
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari 3.1+ */
+	  -moz-user-select: none; /* Firefox 2+ */
+	  -ms-user-select: none; /* IE 10+ */
+	  user-select: none;
+	  font-size: 20px;
+	  color: #cf8a05;
+	}
+	
+	.caret::before {
+	  content: "\25B6";
+	  color: black;
+	  display: inline-block;
+	  margin-right: 0px;
+	}
+	
+	.caret-down::before {
+	  -ms-transform: rotate(90deg); /* IE 9 */
+	  -webkit-transform: rotate(90deg); /* Safari */
+	  transform: rotate(90deg);  
+	}
+	
+	.nested {
+	  display: none;
+	  color: white;
+	}
+	
+	.active {
+	  display: block;
+	  color: white;
+	}
+	</style>
 
 </head>
 <body id="top">
@@ -29,9 +74,10 @@
 		
 		<div id="contactDetails">
 			<ul>
-				<li>e: <a href="mailto:duyanh2705@gmail.com" target="_blank">duyanh2705@gmail.com</a></li>
-				<li>w: <a href="https://www.linkedin.com/in/duyanh2705/">LinkedIn</a></li>
-				<li>m: 4173808657</li>
+				<li>e: <a href="mailto:duyanh2705@gmail.com" title="Personal email" target="_blank">duyanh2705@gmail.com</a></li>
+				<li>w: <a href="https://www.linkedin.com/in/duyanh2705/" title="LinkedIn page" target="_blank" >LinkedIn</a></li>
+				<li>g: <a href="https://github.com/adaoEE" title="Github page" target="_blank" >Github</a></li>
+				<li>p: <a href="callto:4173808657" title="Mobile phone" target="_blank">417-380-8657</a></li>
 			</ul>
 		</div>
 		<div class="clear"></div>
@@ -47,13 +93,19 @@
 					
 					<div class="sectionContent">
 						<article>
-							<h2>University of Washington</h2>
+						<div id="contactDetails1">					
+						<h2>
+							<a href="https://www.tacoma.uw.edu/" title="University Website." style="text-decoration:none;color: inherit !important;left:0;bottom:30px" target="_blank">University of Washington</a>
+						</h2>
+							<h3>
+								<a href="https://www.tacoma.uw.edu/set/curriculum-bs-electrical-engineering" title="EE curriculum at UW" style="text-decoration:none;color: inherit !important;left:0;bottom:30px" target="_blank">BS in Electrical Engineering — GPA 3.93/4.0</a>
+							</h3>
+						</div>
 							<p class="subDetails">June 2020</p>
-							<p> 
-							• Software: Golang, PostgreSQL, MPLAB® XC Compiler, Java, C, Python, MATLAB, SOLIDWORKS, AutoCAD, PSCAD, Power World Simulator, Cadence, ARM, ModelSim, Verilog, Arduino, Inkscape, KIEL, Quartus.	
-							<br>• Hardware: Arduino Uno, Mega 2560 9 (PID controller), PIC, Tiva Series Launchpad (microprocessor RTC), FPGA, Power Generators, oscilloscopes, multimeters, lab components and equipment, DC-DC inverters, Buck-Boost converters
-							</br>
-							• Coursework: Logic Design, Linear Systems, Control Systems, Root Locus, Power Systems, Load Flow, Power Electronics, Electromagnetism, Communication Theory, IC Design, I2C, Microprocessor, all related Math and science classes required for BS in EE.
+							<p> • Undergraduate Merit Scholarship of University of Washington Tacoma, Dean’s List Scholarship.
+							<br> <b>• Coursework:</b> Logic Design, Linear Systems, Control Systems, Root Locus, Power Systems, Load Flow, Power Electronics, Electromagnetism, Communication Theory, IC Design, I2C, Microprocessor, all related Math and science classes required for BS in EE.
+							</br> <b>• Software:</b> Golang, PostgreSQL, MPLAB® XC Compiler, Java, C, Python, MATLAB, SOLIDWORKS, AutoCAD, PSCAD, Power World Simulator, Cadence, ARM, ModelSim, Verilog, Arduino, Inkscape, KIEL, Quartus.	
+							<br> • <b>Hardware: </b>Arduino (PID controller), PIC, Tiva Series Launchpad (microprocessor RTC), FPGA, Power Generators, oscilloscopes, test bench equipment, DC-DC inverters, Buck-Boost converters.
 						</p>
 						</article>
 						
@@ -73,71 +125,116 @@
 			
 			<div class="sectionContent">
 				<article>
-					<h2>Pacific Northwest National Laboratory | Richland, WA</h2>
-					<h3>Engineering Intern </h3>
+				<div id="contactDetails1">
+					<h2>
+						<a href="https://www.pnnl.gov/" title="PNNL website" style="text-decoration:none;color: inherit !important;left:0;bottom:30px" target="_blank">Pacific Northwest National Laboratory | Richland, WA</a>
+					</h2>
+					<h3>
+						<a href="https://www.pnnl.gov/news/release.aspx?id=4537" title="One of the projects I engaged in  " style="text-decoration:none;color: inherit !important;left:0;bottom:30px" target="_blank">Engineering Intern</a>
+					</h3>
+				</div>
 					<p class="subDetails">Jun — Sep 2019</p>
 					<p>     • Worked in Hydrology Group for Department of Energy under operation of Battelle.
-					<br>	• Developed an Electromyography (EMG) firmware and implement the Electrocardiogram (ECG) algorithm base on Pan-Tompkins method to detect QRS complexes using C language.
-					</br>	• Used test equipment like oscilloscope, pulse function arbitrary generator to analyze different characteristics of the components, hardware design and simulate the test environment.
-					<br>	• Applied MPLAB® XC, Peripheral Interface Controller (PIC) to measure the motion, muscle movement, and heart rate of different fish.
-				</br>	• Contributed in programming Arduinos to acquire GPS locations, analyze the data, coding and troubleshooting on the autonomous spooling system of a Remotely Operated Vehicle project.</p>
+					<br>	• Developed an Electromyography (EMG) firmware and implemented the Electrocardiogram (ECG) algorithm base on Pan-Tompkins method to detect QRS complexes using C language.
+					</br>	• Applied MPLAB® XC, Peripheral Interface Controller (PIC) to measure the motion, muscle movement, and heart rate of different fish.
+					<br>	• Analyzed different characteristics of the components, hardware design and simulate the test environment by using oscilloscope, pulse function arbitrary generator.
+					</br>	• Contributed in programming Arduinos to acquire GPS locations of a Remotely Operated Vehicle project.</p>
 				</article>
 				
 				<article>
-					<h2>University of Washington | Tacoma, WA</h2>
-					<h3>Teaching Assistant  </h3>
+					<div id="contactDetails1">	
+					<h2> 
+						<a href="https://www.tacoma.uw.edu" title="Employer website" style="text-decoration:none;color: inherit !important;left:0;bottom:30px" target="_blank">University of Washington | Tacoma, WA</a>
+				
+					</h2>
+					<h3>
+						<a href="https://www.tacoma.uw.edu/set/student-hiring-resource-page" title="Detailed job description" style="text-decoration:none;color: inherit !important;left:0;bottom:30px" target="_blank">Teaching Assistant</a>
+					</h3>
+					</div>
 					<p class="subDetails">Sep 2019 — Mar 2020</p>
-					<p>Facilitated a seminar for roughly 40 diverse students in a junior-level engineering classes in correspondence with full-time faculty..</p>
+					<p>Facilitated a seminar for roughly 40 diverse students in a junior-level engineering class in correspondence with full-time faculty.
+					</p>
 				</article>
-				
-					<h3>Quantitative Tutor </h3>
+					<div id="contactDetails1">
+					<h3>
+						<a href="https://www.tacoma.uw.edu/tlc/jobs" title="Detailed job description" style="text-decoration:none;color: inherit !important;left:0;bottom:30px" target="_blank">Quantitative Tutor</a>
+					</h3>
+					</div>
 					<p class="subDetails">Mar 2018 — June 2020</p>
-					<p>Met with students in an individual, shared and group tutoring format to enhance, support and clarify concepts in Engineering Physics, C, Java, MATLAB, SOLIDWORKS, Verilog.</p>
-				
+					<p>Mentored students in an individual, shared and group tutoring format to enhance, support and	clarify concepts in Engineering Physics, C, Java, MATLAB, SOLIDWORKS, Verilog.
+					</p>
 			</div>
 			<div class="clear"></div>
 		</section>
-		
+
+
 		<section>
 			<div class="sectionTitle">
 				<h1>Research and Project Experience</h1>
 			</div>
-			
+			<!-- span style="text-decoration:none;color: inherit !important;" target="_blank">Dawgs of War - University Rover Challenge</a></h2> -->
+					
 			<div class="sectionContent">
 				<article>
 					<div id="contactDetails1">
-						<h2><a href="https://www.tacoma.uw.edu/news/article/mars-their-eyes"  span style="text-decoration:none;color: inherit !important;" target="_blank">Dawgs of War - University Rover Challenge</a></h2>
-					</div>
-				
+						<h2><a href="https://www.tacoma.uw.edu/news/article/mars-their-eyes" title="University news article" span style="color: inherit !important;" target="_blank">Dawgs of War - University Rover Challenge</a></h2>
+					</div>				
 					<p>Collaborated in a multidisciplinary team to research and develop a prototype of a University Mars Rover for annual international competition.
-						Built a battery pack using 18650 Li-ion batteries with a customized battery power management.</p>
+					Delivered a battery pack using 18650 Li-ion batteries with a customized battery power management.
+					</p>
 				
 				</article>
 				
 				<article>
 					<div id="contactDetails1">
-						<h2><a href="https://docs.google.com/presentation/d/1jIIjMkDfqsUrS4MLMg62BctlLuq7GKBVAMFgsENbkq8/edit"  span style="text-decoration:none;color: inherit !important;" target="_blank">Fire Force</a></h2>
+						<h2><a href="https://docs.google.com/presentation/d/1jIIjMkDfqsUrS4MLMg62BctlLuq7GKBVAMFgsENbkq8/edit" title="Project Summary" span style="color: inherit !important;" target="_blank">Fire Force</a></h2>
 					</div>
-					
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/JRQ8NHc9rZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<p>Collaborated in a team of four to research and develop a system using multiple TurtleBot3 robots to search and rescue or explore new environment where GPS-tracking is not reachable. Experienced with Linux and ROS, Python, simulation in Gazebo.</p>
+				
+					<ul id="myUL">
+						<p><li><span class="caret"></span> Cooperated in a team of four to research and develop a system using multiple TurtleBot3 robots to search and rescue or explore new environment where GPS-tracking is not reachable. Experienced with Linux, ROS, Python and simulation in Gazebo
+						</p>
+					   
+					<ul class="nested">
+						<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQwv4J0_6J8augPzRM2Z4pcNT9G3tr-ExkfFGP3NES5_f90LW01sVagHIuc9oG0RdMW3HDnfprau-t1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="720" height="495" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+					
+					</ul> 
 				</article>
 
 				<article>
 					<div id="contactDetails1">
-						<h2><a href="https://photos.google.com/share/AF1QipNQDRU0JHXN_KEsimA-GnKPUeUlGQK_WVf3QYsyWAkkZfa5NZ9oKnCZT6_WNleECw/photo/AF1QipNZ7JyIN6-Cfu_5qlYJFPnHTC8wkgxyLq_7GHUH?key=OEhmblk1aTE3czVjYnFMMnNkNFFTdENRUnkzLTZn"  span style="text-decoration:none;color: inherit !important;" target="_blank">Robotic Rubik’s Cube Cracker</a></h2>
+						<h2><a href="http://thetacomaledger.com/2019/05/20/rso-collaboration-creates-rubiks-cube-solving-robot/" title="The Tacoma Ledger news article" span style="color: inherit !important;" target="_blank">Robotic Rubik’s Cube Cracker</a></h2>
 					</div>
-					<p class="subDetails">Qualification</p>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/xN2pB57rSDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<p>Led a multidisciplinary team to research the design and implementation of a robot to solved a rubik cube. The Cube Cracker solved a 3x3 Rubik cube under two minutes..</p>
+					<p>Led a multidisciplinary team to research the design and implementation of a robot to solved a rubik cube. Delivered the Cube Cracker that solved a 3x3 Rubik cube under two minutes.
+					</p>
+	
 				</article>
 				<div id="contactDetails1">
-				<h3>Vice President of Institute of Electrical and Electronics Engineers (IEEE) Student Club </h3>
+				<h3>
+					<a href="https://uw-tacoma.presence.io/organization/ieee-student-branch" title="Student club webpage" span style="text-decoration:none;color: inherit !important;left:0;bottom:30px" target="_blank">Vice President of Institute of Electrical and Electronics Engineers (IEEE) Student Club</a>
+					
+				</h3>
 				</div>
 			</div>
 			<div class="clear"></div>
 		</section>
 		
+
+
+		<script>
+			var toggler = document.getElementsByClassName("caret");
+			var i;
+			
+			for (i = 0; i < toggler.length; i++) {
+			  toggler[i].addEventListener("click", function() {
+				this.parentElement.querySelector(".nested").classList.toggle("active");
+				this.classList.toggle("caret-down");
+			  });
+			}
+			</script>
+
+
 		<section>
 			<div class="sectionTitle">
 				<h1>Key Skills</h1>
@@ -148,9 +245,11 @@
 					<li>Golang</li>
 					<li>PostgreSQL</li>
 					<li>MATLAB</li>
-					<li>c</li>
+					<li>C</li>
 					<li>Verilog</li>
 					<li>PowerWorld</li>
+					
+					
 				</ul>
 			</div>
 			<div class="clear"></div>
