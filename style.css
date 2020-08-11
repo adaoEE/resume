@@ -104,12 +104,12 @@ p {
 
 
 
-
 #contactDetails1{
 	text-decoration:none !important;
 	text-decoration:none !important;
 	list-style-type: none !important;
 	margin-bottom: 3px;
+	/* font-weight: bold; */
 	color: rgb(145,123,76);
 }
 
@@ -167,7 +167,7 @@ section:last-child {
 
 .sectionContent h3 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	margin-bottom: -2px;
 }
 
